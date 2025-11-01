@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "paper_title",
+        "summary_length",
+        "summary_style"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n        Please summarize the research paper titled \"{paper_title}\" with the following specifications:\n        - Summary Style: {summary_style}\n        - Summary Length: {summary_length}\n        - Mathematical Details:\n            - Include mathematical equations and technical details if the style is \"Technical\".\n            - Avoid complex equations if the style is \"Layman\".\n        - Analogies:\n            - Use relatable analogies to explain complex concepts if the style is \"Layman\".\n        If certain information is not available in the paper, please indicate that appropriately.\n    ",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
