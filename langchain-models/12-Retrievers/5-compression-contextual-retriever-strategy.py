@@ -3,6 +3,9 @@ from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 from langchain.retrievers.contextual_compression import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 embedding_model = AzureOpenAIEmbeddings(model="text-embedding-3-small", dimensions=1536)

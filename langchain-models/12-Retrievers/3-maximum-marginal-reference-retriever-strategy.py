@@ -1,6 +1,9 @@
 from langchain_openai import AzureOpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.schema import Document
+from dotenv import load_dotenv
+
+load_dotenv()
 
 embedding_model = AzureOpenAIEmbeddings(model="text-embedding-3-small", dimensions=1536)
 
